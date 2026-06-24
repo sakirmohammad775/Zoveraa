@@ -92,7 +92,6 @@
 
 export const DashboardCommand = () => {
     return ( 
-        <>h1
-        jello</>
+        <></>
      );
 }
