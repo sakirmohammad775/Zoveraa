@@ -17,7 +17,7 @@ export const AgentsView = () => {
       <ResponsiveDialog
         title="Responsive Test"
         description="This is a responsive dialog test"
-        open
+        open={true}
         onOpenChange={() => {}}
       >
         <Button>Some Action</Button>
