@@ -19,9 +19,8 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 
-
-import { agentsInsertSchema } from "../../schemas";
 import { AgentGetOne } from "../../types";
+import { agentsInsertSchema } from "../../schemas";
 
 interface AgentFormProps {
   onSuccess?: () => void;
@@ -41,7 +40,7 @@ export const AgentForm = ({
     trpc.agents.create.mutationOptions({
       onSuccess: async () => {
         await queryClient.invalidateQueries(
-          trpc.agents.getMany.queryOptions(),
+          trpc.agents.getMany.queryOptions({}),
         );
 
         if (initialValues?.id) {
