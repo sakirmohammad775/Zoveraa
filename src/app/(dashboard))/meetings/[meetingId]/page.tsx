@@ -4,8 +4,8 @@ import { dehydrate, HydrationBoundary } from "@tanstack/react-query";
 
 import { auth } from "@/lib/auth";
 import { getQueryClient, trpc } from "@/trpc/server";
-import { CallView } from "@/modules/call/ui/views/call-view";
 
+import { CallView } from "@/modules/call/ui/views/call-view";
 
 interface Props {
   params: Promise<{
